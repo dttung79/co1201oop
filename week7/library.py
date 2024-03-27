@@ -35,5 +35,8 @@ class Library:
         b.author = author
         b.price = price
     
+    def add_book(self, id, title, author, price):
+        self.__books.append(Book(id, title, author, price))
+        
     def delete_book(self, index):
         del self.__books[index]
