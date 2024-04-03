@@ -21,7 +21,7 @@ class Library:
         return books
 
     def get_titles(self):
-        return [b.title for b in self.__books]
+        return [b.title for b in self.__books] # list comprehension
     
     def get_book(self, index):
         # return self.__boks[index] => not safe, expose book's info to outside
