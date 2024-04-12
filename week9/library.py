@@ -38,3 +38,9 @@ class Library:
         
     def delete_book(self, index):
         del self.__books[index]
+
+    def search_id(self, id):
+        for i in range(len(self.__books)):
+            if self.__books[i].id == id:
+                return i
+        return None
